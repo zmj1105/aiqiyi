@@ -1,0 +1,2409 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+html,body{
+    width: 100%;
+}
+img{
+    border: none;
+    display: block;
+}
+a,a:target,a:active,a:hover {
+    text-decoration: none;
+    color: black;
+}
+ul,li{
+    list-style: none;
+    display: block;
+}
+.container{
+    /*position: relative;*/
+}
+
+.outerSet{
+
+    width: 1349px;
+    height: 60px;
+}
+/*.setBox{*/
+    /*position: fixed;*/
+/*}*/
+.topContainer{
+   position: fixed;
+    margin: 0 auto;
+    width: 1349px;
+    height: 60px;
+    z-index: 1;
+}
+.topContainer .topNavigation{
+    padding-top: 4px;
+    height: 55px;
+    width: 1349px;
+    background: #202020;
+    border-bottom: 1px solid #292929;
+
+}
+ .navigation-content{
+
+   margin-left: 80px;
+   height: 45px;
+   width: 1226px;
+
+}
+ .navigation-content div{
+    float: left;
+}
+ .navigation-content div img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+ .navigation-content .listContent-log{
+    width: 100px;
+    height: 50px;
+}
+ .contain-listContent{
+     width: 90px;
+     height: 60px;
+     margin-left: 17px;
+ }
+
+ .navigation-content div.listContent-navigation{
+     display: none;
+     background: url("../img/q2.png") no-repeat;
+     cursor: pointer;
+     height: 38px;
+     width: 90px;
+     margin-top: 8px;
+     position: relative;
+
+}
+.navigation-content div.change{
+    background: url("../img/q2.png") no-repeat 0 -39px;
+    cursor: pointer;
+    height: 38px;
+    width: 90px;
+    margin-top: 8px;
+    position: relative;
+}
+.navigation-content .secondNavigation{
+    display: none;
+    position: absolute;
+    left:-150px;
+    top: 48px;
+    width: 1180px;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 4;
+}
+.navigation-content .secondNavigation .secondNavigation-bb{
+    height: 90px;
+    width: 1180px;
+}
+.navigation-content .secondNavigation .secondNavigation-bb ul{
+    float: left;
+    margin-left: 22px;
+}
+.navigation-content .secondNavigation .secondNavigation-bb ul li{
+    display: block;
+    float: left;
+}
+.navigation-content .secondNavigation .secondNavigation-bb a{
+    color: white;
+}
+
+
+ .navigation-content .listContent-search{
+    position: relative;
+    margin-top: 3px;
+    margin-left: 50px;
+    width: 930px;
+    height: 49px;
+}
+.navigation-content .listContent-search input{
+    margin-top: 3px;
+    display: inline-block;
+    float: left;
+}
+.navigation-content .listContent-search .search-left{
+    border-radius: 3px;
+    height: 34px;
+    width: 423px;
+    background: #e8e8e8;
+
+}
+.navigation-content .listContent-search .search-right{
+    position: absolute;
+    left: 364px;
+    height: 38px;
+    width: 110px;
+    background: url("../img/search.png") no-repeat;
+    border: 1px solid #5aa700;
+}
+.navigation-content .listContent-search ul{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}
+.navigation-content .listContent-search ul li{
+    padding-top: 3px;
+
+    display: inline-block;
+    float: left;
+}
+.navigation-content .listContent-search ul li a{
+    display: block;
+    padding-left: 15px;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.listContent-search ul li a:hover{
+    color: #5aa700;
+}
+.centerContent{
+    margin: 0 auto;
+    height: 410px;
+    width: 1349px;
+}
+.centerContent .centerSet{
+    position: relative;
+    height: 410px;
+    width: 1349px;
+}
+.centerContent .pictureMove{
+    height: 410px;
+    width: 1349px;
+    overflow: hidden;
+}
+.centerContent .pictureMove img{
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.centerContent .pictureMove img.show{
+    display: block;
+}
+.centerContent .containLists{
+    position: absolute;
+    right: 60px;
+    bottom: 20px;
+}
+.centerContent .containLists .lists{
+    position: relative;
+    height: 371px;
+    width: 247px;
+    background: url("../img/1.png");
+}
+.centerContent .containLists .lists ul{
+    position: absolute;
+    top: 20px;
+    left: 13px;
+    height: 346px;
+    width: 220px;
+}
+.centerContent .containLists .lists ul li{
+    height: 34px;
+    line-height: 34px;
+    width: 220px;
+    text-align: center;
+    color: white;
+}
+.ulList li:hover{
+    background: #5aa700;
+}
+.centerContent .secondNavigation{
+    position: relative;
+    width: 1349px;
+    height: 110px;
+    background: #010101;
+}
+.centerContent .secondNavigation .secondNavigation-aa{
+    width: 1349px;
+    height: 110px;
+}
+.centerContent .secondNavigation .secondNavigation-bb{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 90px;
+    width: 1180px;
+    border: 1px solid #5aa700;
+
+}
+.centerContent .secondNavigation .secondNavigation-aa ul{
+    float: left;
+    margin-left: 22px;
+}
+.centerContent .secondNavigation .secondNavigation-aa ul li{
+    display: block;
+    float: left;
+}
+.centerContent .secondNavigation .secondNavigation-aa a{
+    color: white;
+}
+.line a:hover{
+    color: #5aa700;
+}
+.navigation-second li a:hover{
+    color: #5aa700;
+}
+.navigation-first{
+    margin-left: 3px;
+    width: 60px;
+    height: 90px;
+    background: url("../img/line.png") no-repeat 56px 0;
+}
+.navigation-first li{
+    height: 30px;
+    line-height: 30px;
+    width: 60px;
+}
+.navigation-third{
+    height: 90px;
+    width: 130px;
+    background: url("../img/line.png") no-repeat 128px 0;
+}
+.navigation-third li{
+    height: 30px;
+    line-height: 30px;
+    width: 65px;
+}
+.navigation-second{
+    height: 90px;
+    width: 100px;
+    background: url("../img/line.png") no-repeat 97px 0;
+}
+.navigation-second li{
+    height: 30px;
+    line-height: 30px;
+    width: 50px;
+}
+.navigation-forth{
+    height: 90px;
+    width: 200px;
+    background: url("../img/line.png") no-repeat 195px 0;
+}
+.navigation-forth li{
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+}
+
+.bodyContent{
+    margin: 135px auto;
+    width: 1200px;
+}
+.bodyContent-first{
+    width: 1200px;
+    height: 440px;
+}
+.bodyContent-first-left{
+    position: relative;
+}
+.bodyContent-first div{
+    height: 435px;
+    width: 400px;
+    float: left;
+}
+.bodyContent-first-left .left1{
+    position: absolute;
+    width: 380px;
+    height: 45px;
+    border-bottom: 2px solid #5aa700;
+}
+.bodyContent-first-left .left1 h3{
+    display: inline-block;
+    height: 45px;
+    padding-top: 8px;
+    float: left;
+}
+.left1 h3 a{
+    font-size: 24px;
+    color: #5aa700;
+}
+.left-a{
+    position: absolute;
+    margin-left: 310px;
+    margin-top: 9px;
+    display: block;
+    width: 56px;
+    height: 24px;
+    line-height: 22px;
+    padding-left: 8px;
+    border: 1px solid #e9e9e9;
+    border-radius: 20px;
+    text-align: left;
+    float: left;
+}
+.bodyContent-first-left .left1 .left-i{
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+    background: url("../img/left-i.png")  no-repeat  -120px -400px;
+}
+.bodyContent-first-left .left2{
+    margin-top: 60px;
+}
+.left2 h2 a{
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+}
+.left2Ul li{
+    padding: 1px 0;
+    height: 32px;
+    width: 380px;
+    line-height: 32px;
+}
+.left2Ul li i{
+    width: 13px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 2px;
+    vertical-align: middle;
+    overflow: hidden;
+    background: url("../img/index.png") no-repeat -100px -1420px;
+    cursor: pointer;
+}
+.left2Ul li a{
+    height: 19px;
+    line-height: 19px;
+    width: 100%;
+    font-size: 16px;
+}
+.left2Ul div{
+    display: block;
+    margin-top: 20px;
+    width: 180px;
+    padding-right: 20px;
+    height: 140px;
+    float: left;
+}
+.left2Ul div img{
+    width: 100%;
+    height: 101px;
+}
+.left2Ul div a{
+    display: block;
+    height: 35px;
+    width: 180px;
+    line-height: 40px;
+    background: #e8e8e8;
+}
+.bodyContent-first-center{
+    margin-top: 10px;
+}
+.bodyContent-first-center div.center1{
+    position: relative;
+    height: 252px;
+    width: 400px;
+}
+.bodyContent-first-center div.tu{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding-left: 20px;
+}
+.bodyContent-first-center div.wold{
+    height: 40px;
+    width: 380px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.56);
+}
+.bodyContent-first-center .wold a{
+    display: block;
+    float: left;
+}
+.bodyContent-first-center .wold .a1{
+    height: 27px;
+    width: 32px;
+    background: url("../img/playBtn.png") no-repeat;
+    margin-top:8px;
+}
+.bodyContent-first-center .wold .a2{
+    height: 40px;
+    width: 328px;
+    line-height: 40px;
+     color: white;
+    font-size: 18px;
+    padding-left: 12px;
+}
+.bodyContent-first-center .center2{
+    margin-top: 20px;
+    padding-left: 20px;
+    display: block;
+}
+.center2 .left2Ul1 li{
+    padding: 2px 0;
+    height: 33px;
+    width: 380px;
+    line-height: 33px;
+}
+.center2 .left2Ul1 li i{
+    width: 13px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 2px;
+    vertical-align: middle;
+    overflow: hidden;
+    background: url("../img/index.png") no-repeat -100px -1420px;
+    cursor: pointer;
+}
+.center2 .left2Ul1 li a{
+    height: 19px;
+    line-height: 19px;
+    width: 100%;
+    font-size: 16px;
+}
+.bodyContent-first-right li{
+    display: block;
+    margin-top: 15px;
+    width: 180px;
+    padding-left: 20px;
+    height: 140px;
+    float: left;
+}
+.bodyContent-first-right li img{
+    width: 100%;
+    height: 102px;
+}
+.bodyContent-first-right li a{
+    display: block;
+    height: 35px;
+    width: 180px;
+    line-height: 40px;
+    background: #e8e8e8;
+}
+.bodyContent-second li,div.a1{
+    overflow: hidden;
+}
+.bodyContent-second li div{
+    overflow: hidden;
+}
+.bodyContent-second .bodyContent-secondLeft img{
+    cursor: pointer;
+    -webkit-transition: all .5s linear 0s;
+    transition: all .5s linear 0s;
+}
+.bodyContent-second .bodyContent-secondLeft img:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+.bodyContent-second{
+    clear: both;
+    height: 432px;
+    width: 1200px;
+}
+.secondContainer{
+    position: relative;
+    height: 412px;
+    width: 1200px;
+}
+.bodyContent-secondLeft-top{
+    margin-top:40px;
+    border-bottom: 2px solid #5aa700;
+    height: 45px;
+    width:980px;
+}
+.bodyContent-secondLeft{
+    float: left;
+}
+.bodyContent-secondLeft-top .left1{
+    padding-top: 10px;
+}
+.bodyContent-secondLeft-top h3 {
+    display: block;
+    height: 45px;
+    margin-bottom: 10px;
+    float: left;
+}
+.bodyContent-secondLeft-top .left-i{
+    padding-bottom: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 45px;
+    cursor: pointer;
+    background: url("../img/tit-playBtn.png")  no-repeat  0 10px;
+}
+.bodyContent-secondLeft-top .bsUl{
+    display: block;
+    height: 45px;
+    float: left;
+}
+.bodyContent-secondLeft-top .bsUl li{
+    display: inline-block;
+    height: 45px;
+    float: left;
+    margin-left: 27px;
+
+}
+.bodyContent-secondLeft-top .bsUl a{
+    height: 45px;
+    line-height: 45px;
+}
+.bodyContent-secondLeft-top .bsUl li span{
+    margin-left: 10px;
+    display: inline-block;
+ color: darkgray;
+}
+.bodyContent-secondLeft-body{
+    margin-top: 20px;
+}
+.bodyContent-secondLeft1{
+    float: left;
+    padding-right: 20px;
+}
+.bodyContent-secondLeft-body .a1{
+    height: 270px;
+    width: 380px;
+}
+.bodyContent-secondLeft-body .a1 img{
+    height: 100%;
+    width: 100%;
+}
+.bodyContent-secondLeft-body .a2{
+    background: #e8e8e8;
+    height: 55px;
+    width: 380px;
+}
+.bodyContent-secondLeft-body .a2 p{
+   display: block;
+    margin-left: 5px;
+}
+.bodyContent-secondLeft-body .a2 .aa1{
+    padding-top: 7px;
+    display: block;
+    height: 23px;
+    font-size: 15px;
+}
+.bodyContent-secondLeft-body .a2 .aa2{
+   margin-bottom: 7px;
+    height: 23px;
+    color: grey;
+}
+.bodyContent-secondLeft2{
+    display: block;
+    width: 600px;
+    height: 340px;
+    float: left;
+}
+.bodyContent-secondLeft2 li{
+    display: block;
+    width: 180px;
+    height: 170px;
+    margin-right: 20px;
+    float: left;
+}
+.bodyContent-secondLeft2 li img{
+   width: 180px;
+    height: 101px;
+}
+.bodyContent-secondLeft2 li .a2{
+    width: 180px;
+    height: 55px;
+}
+.bodyContent-secondLeft2 li .a2 p{
+    width: 180px;
+}
+.bodyContent-secondLeft2 li .aa2{
+    font-size: 10px;
+    color: grey;
+}
+.bodyContent-secondRight{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    float: left;
+    width: 180px;
+    height: 412px;
+}
+.bodyContent-secondRight .left1{
+    width: 200px;
+    margin-top: 40px;
+    height: 45px;
+    border-bottom: 2px solid #5aa700;
+}
+.bodyContent-secondRight h3 {
+    display: block;
+    height: 45px;
+}
+.bodyContent-secondRight .left-i{
+    padding-bottom: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 45px;
+    cursor: pointer;
+    background: url("../img/tit-playBtn.png")  no-repeat  0 10px;
+}
+.bodyContent-secondRight .right2{
+    margin-top: 20px;
+    width: 200px;
+    height: 138px;
+}
+.bodyContent-secondRight .right2 img{
+    width: 200px;
+    height: 101px;
+}
+.bodyContent-secondRight .right2 p{
+    width: 200px;
+    border-bottom: 1px dashed darkgray;
+    background: #e8e8e8;
+}
+.bodyContent-secondRight .right2 p a{
+    width: 200px;
+    height: 37px;
+    line-height: 37px;
+    padding-left: 15px;
+}
+.bodyContent-secondRight ul{
+    margin-top: 1px;
+    width: 180px;
+    padding: 10px;
+    height: 169px;
+    background: #e8e8e8;
+
+}
+.bodyContent-secondRight ul li{
+    width: 180px;
+    padding: 0 10px;
+    height: 34px;
+}
+.bodyContent-secondRight ul li i{
+    cursor: default;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 6px;
+    height: 6px;
+    background: url("../img/a9.png") no-repeat -200px -700px;
+}
+.bodyContent-secondRight ul li a{
+    height: 34px;
+    line-height: 34px;
+    width: 169px;
+}
+.bodyContent-second a:hover{
+    color: #5aa700;
+}
+.bodyContent-third div{
+overflow: hidden;
+}
+.bodyContent-third img{
+cursor: pointer;
+-webkit-transition: all .5s linear 0s;
+transition: all .5s linear 0s;
+}
+.bodyContent-third img:hover{
+-webkit-transform: scale(1.3);
+transform: scale(1.3);
+}
+.bodyContent-third{
+    width: 1200px;
+    clear: both;
+    height: 256px;
+    margin-top:40px;
+}
+.bodyContent-third .left1{
+    width: 1180px;
+    height: 37px;
+   padding-bottom: 3px;
+    border-bottom: 1px solid #E6E6E6;
+}
+.bodyContent-third .thirdUl{
+    margin-top: 20px;
+}
+.bodyContent-third li{
+    display: block;
+    width: 180px;
+    height: 170px;
+    margin-right: 20px;
+    float: left;
+}
+.bodyContent-third li img{
+    width: 180px;
+    height: 101px;
+}
+.bodyContent-third li .a2{
+    width: 180px;
+    height: 55px;
+}
+.bodyContent-third li .a2 p{
+    width: 180px;
+    background: #e8e8e8;
+    height: 55px;
+}
+.bodyContent-third li .a2 p span{
+    display: inline-block;
+    width: 56px;
+    height: 21px;
+    border-radius: 3px;
+    background: pink;
+    color: #5aa700;
+    margin: 5px;
+}
+.bodyContent-third li .a2 p a:hover {
+    color: #5aa700;
+}
+.bodyContent-forth{
+    width: 1200px;
+    clear: both;
+    height: 246px;
+}
+.bodyContent-forth div{
+    overflow: hidden;
+}
+.bodyContent-forth img{
+    cursor: pointer;
+    -webkit-transition: all .5s linear 0s;
+    transition: all .5s linear 0s;
+}
+.bodyContent-forth img:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+.bodyContent-forth .left1{
+    width: 1180px;
+    height: 37px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #E6E6E6;
+}
+.bodyContent-forth .forthUl{
+    margin-top: 20px;
+}
+.bodyContent-forth li{
+    display: block;
+    width: 180px;
+    height: 170px;
+    margin-right: 20px;
+    float: left;
+}
+.bodyContent-forth li img{
+    width: 180px;
+    height: 101px;
+}
+.bodyContent-forth li .a2{
+    width: 180px;
+    height: 54px;
+    background: gainsboro;
+}
+.bodyContent-forth li .a2 p{
+    padding-top: 5px;
+    display: block;
+    width: 180px;
+}
+.bodyContent-forth li .a2 .aa1{
+    width: 100%;
+    margin-left: 5px;
+    height: 17px;
+    line-height: 17px;
+}
+.bodyContent-forth li .a2 .aa2{
+    font-size: 10px;
+    color: grey;
+    height: 23px;
+    width: 180px;
+    margin-left: 5px;
+}
+.bodyContent-fifth {
+     width:1200px;
+     height: 410px;
+    /*margin: 10px;*/
+
+}
+.bodyContent-fifth .bodyContent-secondLeft-body{
+    width:1200px;
+    height: 410px;
+}
+.bodyContent-fifthTop{
+    border-bottom: 2px solid #5aa700;
+    height: 45px;
+    width:1180px;
+}
+.bodyContent-fifthTop h3 {
+    display: block;
+    height: 45px;
+    margin-bottom: 10px;
+    float: left;
+}
+.bodyContent-fifthTop h3 a{
+    font-size: 24px;
+    color: #5aa700;
+}
+.bodyContent-fifthTop .left-i{
+    padding-bottom: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 45px;
+    cursor: pointer;
+    background: url("../img/tit-playBtn.png")  no-repeat  0 10px;
+}
+.bodyContent-fifthTop.bsUl{
+    display: block;
+    height: 45px;
+    float: left;
+}
+.bodyContent-fifthTop .bsUl li{
+    display: inline-block;
+    height: 45px;
+    float: left;
+    margin-left: 27px;
+
+}
+.bodyContent-fifthTop .bsUl a{
+    height: 45px;
+    line-height: 45px;
+}
+.bodyContent-fifthTop .bsUl li span{
+    margin-left: 10px;
+    display: inline-block;
+    color: darkgray;
+}
+.bodyContent-fifth .bodyContent-secondLeft1{
+    float: left;
+}
+.bodyContent-fifth .bodyContent-secondLeft-body .a2 .aa2{
+    margin-bottom: 7px;
+    height: 23px;
+    color: grey;
+    font-size: 8px;
+}
+.bodyContent-fifth .bodyContent-secondLeft2{
+    display: block;
+    width: 800px;
+    height: 340px;
+    float: left;
+}
+.bodyContent-fifth .bodyContent-secondLeft2 li{
+    display: block;
+    width: 180px;
+    height: 170px;
+    margin-right: 20px;
+    float: left;
+}
+.bodyContent-fifth .bodyContent-secondLeft2 li img{
+    width: 180px;
+    height: 101px;
+}
+.bodyContent-fifth a:hover{
+    color: #5aa700;
+}
+.bodyContent-fifth .bodyContent-secondLeft2 .a2 .aa1{
+ width: 170px;
+}
+.bodyContent-sixth{
+ margin-top: 20px;
+}
+.bodyContent-sixth .forthUl{
+    margin-top: 20px;
+}
+.bodyContent-sixth .forthUl li{
+    display: block;
+    width: 180px;
+    height: 170px;
+    margin-right: 20px;
+    float: left;
+}
+.bodyContent-sixth .forthUl li .a2{
+    height: 60px;
+    width: 180px;
+    background: #E7E7E7;
+}
+.bodyContent-sixth li .a2 .aa1{
+    width: 180px;
+    margin-left: 5px;
+    height: 30px;
+    line-height: 30px;
+}
+.bodyContent-sixth li .a2 .aa2{
+    font-size: 10px;
+    color: grey;
+    height: 30px;
+    width: 180px;
+    margin-left: 5px;
+}
+.bodyContent-sixth .lastDiv{
+    background:#5aa700;
+    display: block;
+    line-height: 160px;
+    width: 180px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.bodyContent-seventh{
+    padding-top: 40px;
+    clear: both;
+    width: 1200px;
+    height: 299px;
+}
+.bodyContent-seventh .seventhBody {
+    margin-top: 20px;
+    width: 1200px;
+    height: 200px;
+    display: block;
+}
+.bodyContent-seventh .seventhBody li{
+    display: block;
+    height: 175px;
+    width: 180px;
+    float: left;
+    margin-right: 20px;
+    background: #E7E7E7;
+}
+.seventhBody .top{
+    padding: 14px 0 0 14px;
+    width: 162px;
+    height: 54px;
+}
+.seventhBody .top img{
+    display: block;
+    width: 54px;
+    height: 54px;
+    float: left;
+    border-radius: 50%;
+}
+.seventhBody .top .span1 a{
+    width: 82px;
+    height: 21px;
+    font-size: 14px;
+}
+.seventhBody .top .span2{
+    width: 24px;
+    height: 14px;
+    font-size: 12px;
+}
+.seventhBody .top em{
+    width: 32px;
+    height: 14px;
+    font-size: 12px;
+}
+.seventhBody .top .ff{
+    margin-left: 5px;
+    height: 54px;
+    width: 74px;
+    display: block;
+    float: left;
+}
+.seventhBody .center{
+    margin-top: 10px;
+    width: 148px;
+    height: 36px;
+    text-align: center;
+    font-size: 12px;
+}
+.seventhBody .bottom a{
+    margin-top: 20px;
+    margin-left: 15px;
+    border-radius: 5px;
+    display: block;
+    height: 28px;
+    width: 150px;
+    font-size: 20px;
+    background: #699f00;
+    color: white;
+    text-align: center;
+}
+.bodyContent-eighth{
+    width: 1184px;
+    height: 230px;
+}
+.eighthTop{
+    height: 22px;
+    width: 84px;
+    border-radius: 5px 5px 0 0;
+    background: #699f00;
+    color: white;
+    text-align: center;
+    line-height: 22px;
+}
+.eighthDeep{
+    width: 1184px;
+    height:162px;
+    border: 1px solid #699f00;
+}
+.eighthDeep .container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.eighthDeep .deepInner{
+    height: 142px;
+    width: 1140px;
+    margin: 10px 22px;
+    overflow: hidden;
+}
+.eighthDeep a,a:hover.a:target,a:active{
+    text-decoration: none;
+    color: black;
+}
+.eighthDeep .deepInner a{
+    display: block;
+}
+.eighthDeep .leftBtn{
+    width: 15px;
+    height: 26px;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    top: 50%;
+    left: 4px;
+    margin-top: -13px;
+    background: url("../img/arrow-left.png") no-repeat center center;
+}
+.eighthDeep .rightBtn{
+    width: 15px;
+    height: 26px;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    top: 50%;
+    right: 4px;
+    text-indent: -999px;
+    margin-top: -13px;
+    background: url("../img/arrow-right.png") no-repeat center center;
+}
+.deepInner div{
+    position: relative;
+    left: 0;
+    height: 120px;
+    width: 170px;
+    padding: 0 10px 0 10px;
+    float: left;
+   background: white;
+}
+.deepInner div .gg1{
+    height: 100px;
+    width: 170px;
+}
+.deepInner div .gg1 img{
+    height: 100%;
+    width: 100%;
+}
+.deepInner div .gg3{
+    position: absolute;
+    top: 0;
+    left: 180px;
+    padding-left: 20px;
+    height: 140px;
+    width: 740px;
+}
+.deepInner div .gg3 img{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.bodyContent-ninth{
+    clear: both;
+    width: 1200px;
+}
+.ninthContainer{
+    position: relative;
+    width: 1200px;
+}
+.bodyContent-ninth .bodyContent-fifthTop{
+    border-bottom: 2px solid #5aa700;
+    height: 45px;
+    width:980px;
+}
+.bodyContent-ninth .bodyContent-secondLeft2{
+    display: block;
+    width: 1000px;
+    height: 610px;
+    margin-bottom: 10px;
+}
+.bodyContent-ninth .bodyContent-secondLeft2 li{
+    display: block;
+    width: 180px;
+    height: 304px;
+    float: left;
+}
+.bodyContent-ninth .bodyContent-secondLeft2 li img{
+    width: 180px;
+    height: 236px;
+}
+.bodyContent-ninth .bodyContent-ninthRight{
+    width: 180px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+.bodyContent-ninthRight .left1{
+    height: 45px;
+    border-bottom: 2px solid #5aa700;
+}
+.bodyContent-ninthRight h3 {
+    display: block;
+    height: 45px;
+}
+.bodyContent-ninthRight .left-i{
+    padding-bottom: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 45px;
+    cursor: pointer;
+    background: url("../img/tit-playBtn.png")  no-repeat  0 10px;
+}
+.bodyContent-ninthRight .ninthUl{
+    margin-top: 20px;
+    height: 304px;
+    width: 180px;
+}
+.bodyContent-ninthRight .ninthUl li{
+     width: 180px;
+     height: 35px;
+ }
+.bodyContent-ninthRight .ninthUl li a{
+    display: inline-block;
+    font-size: 14px;
+    height: 21px;
+    width: 180px;
+
+}
+.bodyContent-ninthRight .ninthUl li i{
+    display: inline-block;
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    line-height: 19px;
+    text-align: center;
+}
+.bodyContent-ninthRight .ninthUl li i.bb1{
+background: #699f00;
+}
+.bodyContent-ninthRight .ninthUl li i.bb2{
+    background: darkgray;
+}
+.bodyContent-ninthRight .a2{
+    background: #E7E7E7;
+    height: 55px;
+}
+.bodyContent-ninthRight .a2 .aa1{
+    display: block;
+    padding-top: 10px;
+    margin-left: 5px;
+}
+.bodyContent-ninthRight .a2 .aa2{
+    display: block;
+    margin-top: 5px;
+    font-size: 10px;
+    color: darkgray;
+    margin-left: 5px;
+}
+.bodyContent-tenth{
+    clear: both;
+    width: 1200px;
+    height: 230px;
+}
+.bodyContent-tenth .cc1{
+    float: left;
+    display: block;
+    width:600px;
+}
+.bodyContent-tenth .cc1 .left1 {
+    padding-bottom: 10px;
+    width: 580px;
+    border-bottom: 1px solid darkgray;
+}
+.bodyContent-tenth .cc1 .forthUl{
+    margin-top: 20px;
+}
+.bodyContent-tenth .cc1 .forthUl li{
+    display: block;
+    float: left;
+    padding-right: 20px;
+}
+.bodyContent-tenth .cc1 .a2{
+    width: 180px;
+    background: #E7E7E7;
+}
+.bodyContent-tenth .cc1 .a2 .aa1{
+    display: block;
+    height: 40px;
+    width: 180px;
+    line-height: 40px;
+    margin-left: 5px;
+}
+.bodyContent-eleventh{
+    margin-top: 40px;
+    height: 130px;
+    width: 1200px;
+}
+.bodyContent-eleventh .div{
+    height: 100px;
+    width: 1200px;
+}
+.bodyContent-eleventh .div img{
+   height: 100%;
+    width: 100%;
+}
+.bodyContent-twelfth{
+    clear: both;
+    width: 1200px;
+}
+.bodyContent-twelfth .ninthContainer{
+    position: relative;
+    width: 1200px;
+}
+.bodyContent-twelfth .bodyContent-fifthTop{
+    border-bottom: 2px solid #5aa700;
+    height: 45px;
+    width:980px;
+}
+.bodyContent-twelfth .bodyContent-secondLeft2{
+    display: block;
+    width: 1000px;
+    height: 610px;
+    margin-bottom: 10px;
+}
+.bodyContent-twelfth .bodyContent-secondLeft2 li{
+    display: block;
+    width: 180px;
+    height: 304px;
+    float: left;
+}
+.bodyContent-twelfth .bodyContent-secondLeft2 li img{
+    width: 180px;
+    height: 236px;
+}
+.bodyContent-twelfth .bodyContent-ninthRight{
+    width: 180px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+.bodyContent-twelfth .left1{
+    height: 45px;
+    border-bottom: 2px solid #5aa700;
+}
+.bodyContent-twelfth h3 {
+    display: block;
+    height: 45px;
+}
+.bodyContent-twelfth .left-i{
+    padding-bottom: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 45px;
+    cursor: pointer;
+    background: url("../img/tit-playBtn.png")  no-repeat  0 10px;
+}
+.bodyContent-twelfth .ninthUl{
+    margin-top: 20px;
+    height: 304px;
+    width: 180px;
+}
+.bodyContent-twelfth .ninthUl li{
+    width: 180px;
+    height: 35px;
+}
+.bodyContent-twelfth .ninthUl li a{
+    display: inline-block;
+    font-size: 14px;
+    height: 21px;
+    width: 180px;
+
+}
+.bodyContent-twelfth .ninthUl li i{
+    display: inline-block;
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    line-height: 19px;
+    text-align: center;
+}
+.bodyContent-twelfth .ninthUl li i.bb1{
+    background: #699f00;
+}
+.bodyContent-twelfth .ninthUl li i.bb2{
+    background: darkgray;
+}
+.bodyContent-twelfthLeft2{
+    margin-top: 20px;
+    width: 1000px;
+}
+.bodyContent-twelfthLeft2 li{
+    display: block;
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+.bodyContent-twelfthLeft2 li .a2{
+    background: #E7E7E7;
+    height: 40px;
+    width: 180px;
+
+
+}
+.bodyContent-twelfth li .a2 .aa1{
+    margin-left: 10px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    width: 180px;
+}
+.bodyContent-twelfth  div .a2{
+    height: 40px;
+}
+.bodyContent-thirteenth{
+    clear: both;
+    width: 1184px;
+    height: 230px;
+    margin-top: 20px;
+}
+.bodyContent-thirteenth .thirteenthDeep{
+    width: 1184px;
+    height:162px;
+    border: 1px solid #699f00;
+}
+.bodyContent-thirteenth .thirteenthDeep .thirteenContainer{
+    height: 100%;
+    width: 100%;
+}
+.bodyContent-thirteenth .thirteenthDeep .innerDeep{
+    height: 142px;
+    width: 1140px;
+    margin: 10px 22px;
+    overflow: hidden;
+}
+.bodyContent-thirteenth .thirteenthDeep .innerDeep div{
+    position: relative;
+    left: 0;
+    height: 140px;
+    width: 170px;
+    padding: 0 10px 0 10px;
+    float: left;
+    background: white;
+}
+.thirteenthDeep .innerDeep div a{
+    display: block;
+}
+ .thirteenthDeep .innerDeep  .gg1{
+    height: 100px;
+    width: 170px;
+}
+ .thirteenthDeep .innerDeep  .gg1 img{
+    height: 100%;
+    width: 100%;
+}
+ .thirteenthDeep .innerDeep  .gg2{
+    width: 170px;
+    height: 40px;
+}
+ .thirteenthDeep .innerDeep  .gg2 img{
+    height: 100%;
+    width: 100%;
+}
+ .thirteenthDeep .innerDeep  .gg3{
+    position: absolute;
+    top: 0;
+    left: 180px;
+    padding-left: 20px;
+    height: 140px;
+    width: 740px;
+}
+ .thirteenthDeep .innerDeep div .gg3 img{
+    height: 100%;
+    width: 100%;
+}
+ .bodyContent-fourteenth{
+     clear: both;
+     width: 1200px;
+     height: 360px;
+ }
+.bodyContent-fourteenth .a2 .aa1{
+    height: 35px;
+    line-height: 35px;
+    display: block;
+    width: 180px;
+    background: #E7E7E7;
+    color: black;
+}
+.bodyContent-fourteenth .fourteenthD1{
+    float: left;
+    width:600px;
+    height: 360px;
+}
+.fourteenthDiv .mm1 p{
+    display: block;
+    height: 35px;
+    width: 380px;
+    background: #E7E7E7;
+}
+.bodyContent-fourteenth .fourteenthD2{
+    float: left;
+    width:400px;
+    height: 360px;
+}
+.bodyContent-fourteenth .fourteenthD3{
+    float: left;
+    width:180px;
+    height: 400px;
+}
+.bodyContent-secondLeft-top1{
+    border-bottom: 2px solid #5aa700;
+    height: 45px;
+    width:580px;
+    padding-bottom: 10px;
+}
+.bodyContent-secondLeft-top1 .left1{
+    padding-top: 10px;
+}
+.bodyContent-secondLeft-top1 h3 {
+    display: block;
+    height: 45px;
+    margin-bottom: 10px;
+    float: left;
+}
+.bodyContent-secondLeft-top1 .left-i{
+    padding-bottom: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 45px;
+    cursor: pointer;
+    background: url("../img/tit-playBtn.png")  no-repeat  0 10px;
+}
+.bodyContent-secondLeft-top1 .bsUl{
+    display: block;
+    height: 45px;
+    float: left;
+}
+.bodyContent-secondLeft-top1 .bsUl li{
+    display: inline-block;
+    height: 45px;
+    float: left;
+    margin-left: 27px;
+
+}
+.bodyContent-secondLeft-top1 .bsUl a{
+    height: 45px;
+    line-height: 45px;
+}
+.bodyContent-secondLeft-top1 .bsUl li span{
+    margin-left: 10px;
+    display: inline-block;
+    color: darkgray;
+}
+.bodyContent-fourteenth .fourteenthD1 .fourteenthDiv .mm1{
+    padding-top: 20px;
+    clear: both;
+    float: left;
+}
+.bodyContent-fourteenth .fourteenthD1 .fourteenthUl{
+    display: block;
+    float: left;
+}
+.bodyContent-fourteenth .fourteenthD1 .fourteenthUl li{
+    width: 180px;
+    height: 135px;
+   margin-top: 18px;
+    padding-left: 20px;
+}
+.bodyContent-secondLeft-top2{
+    border-bottom: 2px solid #5aa700;
+    height: 45px;
+    width:380px;
+    padding-bottom: 10px;
+}
+.fourteenthD2 .fourteenthUl{
+    display: block;
+    margin-top: 20px;
+}
+.fourteenthD2 .fourteenthUl li{
+    display: block;
+    float: left;
+    width: 180px;
+    height: 135px;
+    margin-top: 18px;
+    padding-right: 10px;
+}
+.bodyContent-secondLeft-top2 .left1{
+    padding-top: 10px;
+}
+.bodyContent-secondLeft-top2 h3 {
+    display: block;
+    height: 45px;
+    margin-bottom: 10px;
+    float: left;
+}
+.bodyContent-secondLeft-top2 .left-i{
+    padding-bottom: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 45px;
+    cursor: pointer;
+    background: url("../img/tit-playBtn.png")  no-repeat  0 10px;
+}
+.bodyContent-secondLeft-top2 .bsUl{
+    display: block;
+    height: 45px;
+    padding-top: 10px;
+    float: left;
+}
+.bodyContent-secondLeft-top2 .bsUl li{
+    display: inline-block;
+    height: 45px;
+    float: left;
+    padding-left: 7px;
+}
+.bodyContent-secondLeft-top2 .bsUl a{
+    height: 30px;
+    width: 40px;
+    display: block;
+}
+.bodyContent-secondLeft-top2 .bsUl a img{
+    height: 100%;
+    width: 100%;
+}
+.bodyContent-secondLeft-top3{
+    border-bottom: 2px solid #5aa700;
+    height: 45px;
+    width:180px;
+    padding-bottom: 10px;
+}
+.fourteenthD3 .fourteenthUl{
+    display: block;
+    margin-top: 28px;
+}
+.fourteenthD3 .fourteenthUl li{
+    display: block;
+    width: 180px;
+    height: 135px;
+    margin-top: 18px;
+    padding-right: 10px;
+}
+.bodyContent-secondLeft-top3 .left1{
+    padding-top: 10px;
+}
+.bodyContent-secondLeft-top3 h3 {
+    display: block;
+    height: 45px;
+    margin-bottom: 10px;
+    float: left;
+}
+.bodyContent-secondLeft-top3 .left-i{
+    padding-bottom: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 45px;
+    cursor: pointer;
+    background: url("../img/tit-playBtn.png")  no-repeat  0 10px;
+}
+.bodyContent-fifteenth{
+    clear: both;
+    height: 360px;
+    width: 1200px;
+
+}
+.bodyContent-fifteenth .fifteenthD2{
+    width: 400px;
+    float: left;
+}
+.bodyContent-fifteenth .fifteenthD2 .left1{
+    padding-top: 10px;
+}
+.bodyContent-fifteenth .fifteenthD2 h3 {
+    display: block;
+    height: 45px;
+    margin-bottom: 10px;
+    float: left;
+}
+.bodyContent-fifteenth .fifteenthD2 .left-i{
+    padding-bottom: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 45px;
+    cursor: pointer;
+    background: url("../img/tit-playBtn.png")  no-repeat  0 10px;
+}
+.bodyContent-fifteenth .fifteenthD2 .fifUl{
+    padding-top: 15px;
+    display: inline-block;
+    height: 45px;
+    float: left;
+}
+.bodyContent-fifteenth .fifteenthD2 .fifUl li{
+    display: block;
+    height: 45px;
+    float: left;
+
+}
+.bodyContent-fifteenth .fifteenthD2 .fifUl a{
+    height: 30px;
+    display: inline-block;
+}
+.bodyContent-fifteenth .fifteenthD2 .fifUl li span{
+    padding: 0 10px 0 10px;
+    display: inline-block;
+    color: #e8e8e8;
+}
+.bodyContent-fifteenth .a2 .aa1{
+    height: 35px;
+    line-height: 35px;
+    display: block;
+    width: 180px;
+    background: #E7E7E7;
+    color: black;
+}
+.bodyContent-fifteenth .fifteenthD2 .fifteenthUl{
+    display: block;
+    margin-top: 20px;
+}
+.bodyContent-fifteenth .fifteenthD2 .fifteenthUl .a1{
+    height: 258px;
+    width: 180px;
+}
+.bodyContent-fifteenth .fifteenthD2 .fifteenthUl .a1 img{
+    height: 100%;
+    width: 100%;
+}
+.bodyContent-fifteenth .fifteenthD2 .fifteenthUl li{
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.bodyContent-sixteenth{
+    clear: both;
+    height: 250px;
+    width: 1200px;
+
+}
+.bodyContent-sixteenth .sixteenthD2{
+    width: 400px;
+    float: left;
+}
+.bodyContent-sixteenth .sixteenthD2 .left1{
+    padding-top: 10px;
+}
+.bodyContent-sixteenth .sixteenthD2 h3 {
+    display: block;
+    height: 45px;
+    margin-bottom: 10px;
+    float: left;
+}
+.bodyContent-sixteenth .sixteenthD2 .left-i{
+    padding-bottom: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 45px;
+    cursor: pointer;
+    background: url("../img/tit-playBtn.png")  no-repeat  0 10px;
+}
+.bodyContent-sixteenth .sixteenthD2 .fifUl{
+    padding-top: 15px;
+    display: inline-block;
+    height: 45px;
+    float: left;
+}
+.bodyContent-sixteenth .sixteenthD2 .fifUl li{
+    display: block;
+    height: 45px;
+    float: left;
+
+}
+.bodyContent-sixteenth .sixteenthD2 .fifUl a{
+    height: 30px;
+    display: inline-block;
+}
+.bodyContent-sixteenth .sixteenthD2 .fifUl li span{
+    padding: 0 10px 0 10px;
+    display: inline-block;
+    color: #e8e8e8;
+}
+.bodyContent-sixteenth .a2 p{
+    display: block;
+    height: 35px;
+    width: 180px;
+
+}
+.bodyContent-sixteenth .a2 .aa1{
+    padding-left: 5px;
+    height: 35px;
+    line-height: 35px;
+    display: block;
+    width: 175px;
+    background: #E7E7E7;
+    color: black;
+}
+.bodyContent-sixteenth .sixteenthD2 .fifteenthUl{
+    display: block;
+    margin-top: 20px;
+}
+.bodyContent-sixteenth .sixteenthD2 .fifteenthUl li{
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.bodyContent-seventeenth{
+    clear: both;
+    height: 250px;
+    width: 1200px;
+
+}
+.bodyContent-seventeenth .seventeenthD2{
+    width: 400px;
+    float: left;
+}
+.bodyContent-seventeenth .seventeenthD2 .left1{
+    padding-top: 10px;
+}
+.bodyContent-seventeenth .seventeenthD2 h3 {
+    display: block;
+    height: 45px;
+    margin-bottom: 10px;
+    float: left;
+}
+.bodyContent-seventeenth .seventeenthD2 .left-i{
+    padding-bottom: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 45px;
+    cursor: pointer;
+    background: url("../img/tit-playBtn.png")  no-repeat  0 10px;
+}
+.bodyContent-seventeenth .seventeenthD2 .fifUl{
+    padding-top: 15px;
+    display: inline-block;
+    height: 45px;
+    float: left;
+}
+.bodyContent-seventeenth .seventeenthD2 .fifUl li{
+    display: block;
+    height: 45px;
+    float: left;
+
+}
+.bodyContent-seventeenth .seventeenthD2 .fifUl a{
+    height: 30px;
+    display: inline-block;
+}
+.bodyContent-seventeenth .seventeenthD2 .fifUl li span{
+    padding: 0 10px 0 10px;
+    display: inline-block;
+    color: #e8e8e8;
+}
+.bodyContent-seventeenth .a2 p{
+    display: block;
+    height: 35px;
+    width: 180px;
+
+}
+.bodyContent-seventeenth .a2 .aa1{
+    padding-left: 5px;
+    height: 35px;
+    line-height: 35px;
+    display: block;
+    width: 175px;
+    background: #E7E7E7;
+    color: black;
+}
+.bodyContent-seventeenth .seventeenthD2 .fifteenthUl{
+    display: block;
+    margin-top: 20px;
+}
+.bodyContent-seventeenth .seventeenthD2 .fifteenthUl li{
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.bodyContent-seventeenth{
+    clear: both;
+    height: 250px;
+    width: 1200px;
+
+}
+.bodyContent-seventeenth .seventeenthD2{
+    width: 400px;
+    float: left;
+}
+.bodyContent-seventeenth .seventeenthD2 .left1{
+    padding-top: 10px;
+}
+.bodyContent-seventeenth .seventeenthD2 h3 {
+    display: block;
+    height: 45px;
+    margin-bottom: 10px;
+    float: left;
+}
+.bodyContent-seventeenth .seventeenthD2 .left-i{
+    padding-bottom: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 45px;
+    cursor: pointer;
+    background: url("../img/tit-playBtn.png")  no-repeat  0 10px;
+}
+.bodyContent-seventeenth .seventeenthD2 .fifUl{
+    padding-top: 15px;
+    display: inline-block;
+    height: 45px;
+    float: left;
+}
+.bodyContent-seventeenth .seventeenthD2 .fifUl li{
+    display: block;
+    height: 45px;
+    float: left;
+
+}
+.bodyContent-seventeenth .seventeenthD2 .fifUl a{
+    height: 30px;
+    display: inline-block;
+}
+.bodyContent-seventeenth .seventeenthD2 .fifUl li span{
+    padding: 0 10px 0 10px;
+    display: inline-block;
+    color: #e8e8e8;
+}
+.bodyContent-seventeenth .a2 p{
+    display: block;
+    height: 35px;
+    width: 180px;
+
+}
+.bodyContent-seventeenth .a2 .aa1{
+    padding-left: 5px;
+    height: 35px;
+    line-height: 35px;
+    display: block;
+    width: 175px;
+    background: #E7E7E7;
+    color: black;
+}
+.bodyContent-seventeenth .seventeenthD2 .fifteenthUl{
+    display: block;
+    margin-top: 20px;
+}
+.bodyContent-seventeenth .seventeenthD2 .fifteenthUl li{
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.bodyContent-eighteenth{
+    clear: both;
+    height: 250px;
+    width: 1200px;
+
+}
+.bodyContent-eighteenth .seventeenthD2{
+    width: 400px;
+    float: left;
+}
+.bodyContent-eighteenth .seventeenthD2 .left1{
+    padding-top: 10px;
+}
+.bodyContent-eighteenth .seventeenthD2 h3 {
+    display: block;
+    height: 45px;
+    margin-bottom: 10px;
+    float: left;
+}
+.bodyContent-eighteenth .seventeenthD2 .left-i{
+    padding-bottom: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 45px;
+    cursor: pointer;
+    background: url("../img/tit-playBtn.png")  no-repeat  0 10px;
+}
+.bodyContent-eighteenth .seventeenthD2 .fifUl{
+    padding-top: 15px;
+    display: inline-block;
+    height: 45px;
+    float: left;
+}
+.bodyContent-eighteenth .seventeenthD2 .fifUl li{
+    display: block;
+    height: 45px;
+    float: left;
+
+}
+.bodyContent-eighteenth .seventeenthD2 .fifUl a{
+    height: 30px;
+    display: inline-block;
+}
+.bodyContent-eighteenth .seventeenthD2 .fifUl li span{
+    padding: 0 10px 0 10px;
+    display: inline-block;
+    color: #e8e8e8;
+}
+.bodyContent-eighteenth .a2 p{
+    display: block;
+    height: 35px;
+    width: 180px;
+
+}
+.bodyContent-eighteenth .a2 .aa1{
+    padding-left: 5px;
+    height: 35px;
+    line-height: 35px;
+    display: block;
+    width: 175px;
+    background: #E7E7E7;
+    color: black;
+}
+.bodyContent-eighteenth .seventeenthD2 .fifteenthUl{
+    display: block;
+    margin-top: 20px;
+}
+.bodyContent-eighteenth .seventeenthD2 .fifteenthUl li{
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.bodyContent-twentieth{
+    margin-top: 40px;
+    width: 1200px;
+    height:200px;
+
+}
+.bodyContent-twentieth div.cc3{
+    float: left;
+    padding-right: 20px;
+}
+.bodyContent-twentieth .cc1{
+    width: 180px;
+    height:100px;
+    position: relative;
+}
+.bodyContent-twentieth .cc1 img{
+    height: 100%;
+    width: 100%;
+}
+.bodyContent-twentieth .cc1 span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    background: black;
+    opacity: 0.7;
+    width: 180px;
+    height: 25px;
+}
+.bodyContent-twentieth .cc1 p{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 5px;
+}
+.bodyContent-twentieth .cc1 a{
+    display: block;
+    color: white;
+    font-size: 14px;
+    height: 25px;
+    line-height: 25px;
+
+
+}
+.bodyContent-twentieth .cc2 a{
+    display: block;
+    height: 40px;
+    width: 180px;
+    background: #85ba4d;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+}
+.body-bottom1{
+    clear: both;
+    height: 160px;
+    width: 1180px;
+    border: 1px solid darkgrey;
+    background: #e8e8e8;
+}
+.body-bottom1 .dd1{
+    display: block;
+    float: left;
+    border-right: 1px solid darkgrey;
+    height: 160px;
+    width: 589px;
+}
+.body-bottom1 .dd1 .dd3{
+    height: 60px;
+    line-height: 60px;
+    margin-left: 20px;
+}
+.body-bottom1 .dd1 .dd3 a{
+    display: block;
+    font-size: 24px;
+}
+.body-bottom1  .dd1 ul{
+    display: block;
+    height: 100px;
+    width: 100%;
+    margin-left: 20px;
+}
+.body-bottom1  .dd1 ul li{
+    display: block;
+    float: left;
+    height: 20px;
+    padding-bottom: 10px;
+    width: 80px;
+}
+.body-bottom1  .dd1 ul li a{
+    font-size: 10px;
+}
+.body-bottom1 .dd2{
+    display: block;
+    float: left;
+    height: 160px;
+    width: 589px;
+}
+.body-bottom1 .dd2 .dd3{
+    height: 60px;
+    line-height: 60px;
+    margin-left: 20px;
+}
+.body-bottom1 .dd2 .dd3 a{
+    display: block;
+    font-size: 24px;
+}
+.body-bottom1  .dd2 ul{
+    display: block;
+    height: 100px;
+    width: 100%;
+    margin-left: 20px;
+}
+.body-bottom1  .dd2 ul li{
+    display: block;
+    float: left;
+    height: 20px;
+    padding-bottom: 10px;
+    width: 190px;
+}
+.body-bottom1  .dd2 ul li a{
+    font-size: 10px;
+}
+
+.body-bottom{
+    clear: both;
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    border-top: 1px solid darkgrey;
+
+
+}
+ a:hover{
+    color: #8ac024;
+}
+.body-bottom div{
+    width: 1200px;
+    height: 200px;
+
+}
+.body-bottom div .bottomUl1{
+    padding-top: 40px;
+    display: block;
+    width: 830px;
+    height: 30px;
+    margin-left: 265px;
+
+}
+.body-bottom div .bottomUl1 li{
+    display: block;
+    float: left;
+}
+.body-bottom div .bottomUl1 li a{
+    font-size: 12px;
+}
+.body-bottom div .bottomUl1 li span{
+    display: inline-block;
+    padding: 0 10px 0 10px;
+}
+.body-bottom div p.dd5{
+    font-size: 10px;
+    display: block;
+    width: 1200px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    color: darkgrey;
+}
+.body-bottom div p.dd5 a{
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 10px;
+    color: darkgrey;
+}
+.body-bottom .bottom-ulList{
+    clear: both;
+    padding-top: 10px;
+    width: 1200px;
+    height: 114px;
+    display: block;
+   margin-left: 90px;
+}
+.body-bottom div .bottom-ulList ul{
+    display: block;
+    float: left;
+}
+.body-bottom div .bottom-ulList ul li{
+    display: block;
+    height: 27px;
+    line-height: 27px;
+    margin-right: 46px;
+    padding-bottom: 5px;
+}
+.body-bottom div .bottom-ulList ul li i{
+
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    padding: 2px;
+}
+.body-bottom div .bottom-ulList ul li i img{
+    height: 100%;
+    width: 100%;
+}
+.body-bottom div .bottom-ulList ul li a{
+    display: inline-block;
+    font-size: 10px;
+    color: darkgrey;
+}
+.body-bottom div p.dd4{
+    font-size: 10px;
+    display: block;
+    width: 1200px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    color: darkgrey;
+}
+.body-bottom div p.dd4 a{
+    display: inline-block;
+    font-size: 10px;
+    color: darkgrey;
+}
+.box-contain{
+    display: none;
+    clear: both;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 8611px;
+    z-index: 6;
+}
+.box-contain .setBox{
+    position: relative;
+}
+.topDiv{
+    width: 100%;
+    height: 8611px;
+    background: black;
+    opacity: 0.7;
+}
+ .box{
+     position: absolute;
+     top: 0;
+     left: 400px;
+    display: none;
+    height: 460px;
+    width: 462px;
+}
+.box .boxTop{
+    position: relative;
+    background: url("../img/q1.png");
+    height: 170px;
+    width: 462px;
+}
+.box .boxTop a{
+    position: absolute;
+    right: 15px;
+    top: 78px;
+    height: 13px;
+    width: 13px;
+    display: block;
+}
+.box .boxTop a i{
+    display: block;
+    height: 13px;
+    width: 13px;
+    background: url("../img/q5.png") no-repeat 0 -14px;
+}
+.box .boxBody{
+    height: 290px;
+    width: 462px;
+    background: white;
+}
+.box .boxBody .boxBody-inner{
+    width: 327px;
+    height: 272px;
+    padding-left: 50px;
+}
+.box .boxBody .boxBody-inner div.ff1{
+    height: 30px;
+    width: 377px;
+    padding-bottom: 27px;
+
+}
+.box .boxBody .boxBody-inner div.ff1 span{
+    display: inline-block;
+    height: 30px;
+    padding-bottom: 27px;
+    width: 50px;
+}
+.box .boxBody .boxBody-inner div .ff2 {
+    display: inline-block;
+    height: 30px;
+    border: 1px solid #e8e8e8;
+    width: 266px;
+}
+#boxA{
+    position: absolute;
+    right:100px;
+     bottom: 205px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    padding: 2px;
+}
+.box .boxBody .boxBody-inner div.ff1 a img{
+    height: 100%;
+    width: 100%;
+}
+.boxB{
+    margin-top: -10px;
+    height: 15px;
+    position: relative;
+    float: left;
+}
+.boxB .boxC{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top:3px;
+}
+.boxB h2{
+    display: inline-block;
+    height: 15px;
+    width: 160px;
+    margin-left: 20px;
+    line-height: 15px;
+}
+.boxB span{
+    display: inline-block;
+    padding: 0 10px;
+}
+.boxB a{
+    height: 15px;
+    width: 48px;
+    font-size: 12px;
+    color: #85ba4d;
+}
+.boxE{
+    margin-top: 20px;
+    height: 35px;
+    width: 327px;
+}
+.boxE a{
+    display: block;
+    background: #85ba4d;
+    margin: 0 auto;
+    height: 30px;
+    width: 264px;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+.boxF{
+    position: relative;
+    margin: 0 auto;
+    width: 266px;
+    padding-right: 20px;
+    height: 50px;
+    padding-top: 6px;
+}
+ #nn1{
+    margin-top: 10px;
+    display: block;
+    width: 266px;
+     height: 20px;
+    text-align: center;
+    color: #dadada;
+}
+ a:hover{
+    color: #008000;
+}
+ a.nn2{
+    display: block;
+    width: 130px;
+    height: 16px;
+    position: absolute;
+    padding:5px 0 0 120px;
+
+}
+ a i.bg1{
+     display: block;
+     width: 10px;
+     height: 6px;
+     background: url("../img/q4.png") no-repeat -40px -40px;
+ }
+ a i.bg2{
+    display: block;
+    width: 10px;
+    height: 6px;
+    background: url("../img/q4.png") no-repeat 0 -40px;
+}
+.boxG{
+    display:none;
+    height: 30px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+.boxG li{
+    display: block;
+    float: left;
+    height: 27px;
+    width: 28px;
+    margin-right: 6px;
+}
+.boxG li img{
+    height: 100%;
+    width: 100%;
+}
+
